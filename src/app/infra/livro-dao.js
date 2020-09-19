@@ -60,7 +60,7 @@ class LivroDao {
                 [id],
                 (erro, livro) => {
                     if (erro) {
-                        return reject('NÃ£o foi possÃ­vel encontrar o livro!');
+                        return reject('Não foi possível encontrar o livro!');
                     }
                     return resolve(livro);
                 }
@@ -85,7 +85,7 @@ class LivroDao {
             ],
             erro => {
                 if (erro) {
-                    return reject('NÃ£o foi possÃ­vel atualizar o livro!');
+                    return reject('Não foi possível atualizar o livro!');
                 }
 
                 resolve();
@@ -105,7 +105,7 @@ class LivroDao {
                 [id],
                 (erro) => {
                     if (erro) {
-                        return reject('NÃ£o foi possÃ­vel remover o livro!');
+                        return reject('Não foi possí­vel remover o livro!');
                     }
                     return resolve();
                 }
